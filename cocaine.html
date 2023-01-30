@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cocaine</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bumbeishvili/d3-tip-for-v6@4/d3-tip.min.css">
+
+
+
+    <style>
+
+      
+      .legend {
+            font-family: 'Raleway', sans-serif;
+            fill: "#073B4C";
+      }
+      
+      .tooltip {
+            fill: #333333;
+      }
+
+    </style>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Drug Users Personality Scores Analysis</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="alcohol.html">alcohol</a></li>
+            <li><a href="amphetamine.html">amphetamine</a></li>
+            <li><a href="cannabis.html">cannabis</a></li>
+            <li><a href="cocaine.html">cocaine</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- scores section starts  -->
+
+<section class="scores">
+
+
+   
+
+
+    <div id="cocaine-description"></div>
+
+
+
+    <button id="openness" onclick="toggleChart1()" class="btn">Openness</button>
+      <button id="conscientiousness" onclick="toggleChart2()" class="btn">Conscientiousness</button>
+      <button id="extraversion" onclick="toggleChart3()" class="btn" >Extraversion</button>
+      <button id="agreeableness" onclick="toggleChart4()" class="btn">Agreeableness</button>
+      <button id="neuroticism" onclick="toggleChart5()" class="btn">Neuroticism</button>
+    
+    
+      
+      
+    <div class="grid-container">
+        
+        <div id="male-scores"></div>
+        <div id="female-scores"></div>
+
+    </div>
+    
+ 
+    <div class="grid-container">
+
+      <div id="agebar_o" style="display: none;" ></div>
+      <div id="agebar_c" style="display: none;"></div>
+      <div id="agebar_e" style="display: none;"></div>
+      <div id="agebar_a" style="display: none;"></div>
+      <div id="agebar_n" style="display: none;"></div>
+
+
+      <div id="edubar_o" style="display: none;"></div>
+      <div id="edubar_c" style="display: none;"></div>
+      <div id="edubar_e" style="display: none;"></div>
+      <div id="edubar_a" style="display: none;"></div>
+      <div id="edubar_n" style="display: none;"></div>
+    </div>
+
+    
+
+      <div id="chart1" style="display: none;">
+            <div id="radarChart1"></div>
+      </div>
+      <div id="chart2" style="display: none;">
+            <div id="radarChart2"></div>
+      </div>
+      <div id="chart3" style="display: none;">
+            <div id="radarChart3"></div>
+      </div>
+      <div id="chart4" style="display: none;">
+            <div id="radarChart4"></div>
+      </div>
+      <div id="chart5" style="display: none;">
+            <div id="radarChart5"></div>
+      </div>
+
+    
+</section>
+
+<!-- scores section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Visual Analytics Project</h3>
+            <p>By using standardized personality assessments. Our objective is to examine the relationship between substance use and personality traits, and to determine if there are any significant differences between soft and hard drug users in terms of their behavioral scores</p>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-- custom js file link  -->
+<script src="cocaine.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        .column {
+          width: 45%;
+          display: inline-block;
+          vertical-align: top;
+          padding: 10px;
+        }
+        .column1 {
+          width: 45%;
+          display: inline-block;
+          vertical-align: top;
+          padding: 10px;
+        }
+      </style>
+
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Drug Users Personality Scores Analysis</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="alcohol.html">alcohol</a></li>
+            <li><a href="amphetamine.html">amphetamine</a></li>
+            <li><a href="cannabis.html">cannabis</a></li>
+            <li><a href="cocaine.html">cocaine</a></li>
+
+        </ul>
+    </nav>
+ 
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts   -->
+<section class="scores">
+    <div id="alcohol-description">
+     
+            <div class="column">
+                  <h1 style="text-align:center;font-family:verdana;font-size:16px;">Our Tool</h1>
+                <p style="font-family: 'Open Sans', sans-serif;text-align:justify;font-size:14px;">This website is designed
+                     to illustrate the drug user behavioral pattern based on different drug usage and personality score. 
+                Our tool is designed for the young generation and guardians who might get some insights about the drug users' 
+                personality and how it might be related to a certain drug usage. 
+                In our website, we visualize personality scores of male and female and its correlation with soft drugs and hard drugs.
+                The purpose of this project is to examine the patterns and behaviors of individuals who use soft and hard drugs. 
+                 <p style="font-family: 'Open Sans', sans-serif;text-align:justify;font-size:14px;">The main features 
+                    of our tool is The Big 5 Personality Scores:</p>
+                    <br>
+                    <br>
+                <p>
+                 <ul style="display:inline;">
+                 <li style="display:inline;"><b> <img src="agree.jpg" alt="Ghazal Ayobi" style="width:100px;height:100px;float: left; margin-right: 10px;"></b></li>
+                 <li style="display:inline;">
+                    <img src="open.jpg" alt="Ghazal Ayobi" style="width:100px;height:100px;float: left; margin-right: 10px;">
+                </li>
+                 <li style="display:inline;">
+                    <img src="extra.jpg" alt="Ghazal Ayobi" style="width:100px;height:100px;float: left; margin-right: 10px;">
+                </li>
+                 <li style="display:inline;">
+                    <img src="con.jpg" alt="Ghazal Ayobi" style="width:100px;height:100px;float: left; margin-right: 10px;">
+                </li>
+                 <li style="display:inline;">
+                    <img src="neu.jpg" alt="Ghazal Ayobi" style="width:100px;height:100px;float: left; margin-right: 10px;">
+                </li>
+                </ul>
+                <p style="font-family: 'Open Sans', sans-serif;text-align:justify;font-size:8px;">
+                    <a href="https://www.dreamstime.com/big-five-personality-traits-infographic-has-types-such-as-agreeableness-openness-to-experience-neuroticism-conscientiousness-image254923499" >
+                        Image Source</a>
+                </p>
+                </p>
+                </p>
+              
+            </div>
+       
+            <div class="column">
+            <h2 style="text-align:center;font-size:16px;">Who We Are</h2>
+            <p style="font-family: 'Open Sans', sans-serif;text-align:justify;font-size:14px;">
+                We are team of two: Ghazal Ayobi and Khushnur Binte Jahangir in this project. We are doing Master's in Big Data Management 
+                and Analysis in CentraleSupelec university. We designed this website as part our project in Visual Analytics course.
+                Our objective is to show diiferent visualizations with the help of visual analysis tool D3 to analysis the correlation between drug users drug usage and personality scores. 
+    
+            </p>
+            <br>
+            <div style="display:flex; justify-content:center; align-items:center;">
+            <img src="ghazal.jpg" alt="Ghazal Ayobi" style="width:100px;height:100px;float: left; margin-right: 10px;">
+            <img src="khush.jpg" alt="Khushnur Binte Jahangir" style="width:100px;height:100px;float: left;">
+            </div>
+            </div>
+            <dib class="column">
+                <h1 style="text-align:center;font-family:verdana;font-size:16px;">Hard vs Soft Drugs</h1>
+
+                <p style="font-family: 'Open Sans', sans-serif;text-align:justify;font-size:14px;">
+                Hard Drugs: The risks associated with hard drugs are greater than in the case of soft drugs, especially in terms of health hazards,
+                addiction, and the impact on public order. Hard drugs include, for instance, cocaine, and amphetamine.
+                <br>  
+                <br>
+                Soft Drugs: Soft drugs are less hazardous to health than hard drugs. Soft drugs are not harmless substances, but the risks are less serious than the risks associated with using hard drugs. Soft drugs include, alcohol and marijuana.
+                </p>
+      
+            </dib>
+
+
+             <div class="column">
+                <h2 style="text-align:center;font-size:16px;">Limitation</h2>
+                <p style="font-family: 'Open Sans', sans-serif;text-align:justify;font-size:14px;">
+                    Currently, we are using the personality score of the respondents from our dataset. We are unable to take
+                    input of personality score, drug usage of any user in the website and give the analysis in run-time. In future,
+                    we are planning to take input of the user personality score and other information so that it can help them to understand
+                their behavioral pattern with respect to their drug usuage.Moreover, we also want to add personality score test in our website. 
+             </p>
+        
+             </div>
+             <div class="column">
+                <h2 style="text-align:center;font-size:16px;">Dataset Description</h2>
+                <p style="font-family: 'Open Sans', sans-serif;text-align:justify;font-size:14px;">
+                    We are using data from the <a href="https://archive.ics.uci.edu/ml/datasets/Drug+consumption+%28quantified%29">
+                        UCI Drug Consumption Dataset</a>, which includes information about Drug Use 
+                        and other relevant factors for a large number of respondents.The dataset contains different drugs name,the time of usage,personality
+                        scores of the respondents, country, education background and gender.
+                <br>
+            </div>
+         
+    
+        
+      
+
+
+</div>
+       </div>
+       
+    
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Visual Analytics Project</h3>
+            <p>By using standardized personality assessments. Our objective is to examine the relationship between substance use and personality traits, and to determine if there are any significant differences between soft and hard drug users in terms of their behavioral scores</p>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-- footer section ends -->
+
+
+<!-- jquery cdn link  -->
+
+
+<!-- custom js file link  -->
+<script src="index.js"></script>
+
+</body>
+</html>
+
+
+
